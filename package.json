@@ -1,11 +1,11 @@
 {
-  "name": "nextjs-blog-theme",
-  "description": "A customizable Next.js and Tailwind blog starter. Designed by the Bejamas agency.",
-  "author": "Bejamas and Netlify Inc.",
+  "name": "dmt-day",
+  "description": "El primer evento de EUCs en Argentina",
+  "author": "Thomas Villaverde.",
   "contributors": [
-    "Charlie Gerard",
-    "Prince Wilson",
-    "Tara Manicsic",
+    "Eco Alsina",
+    "Inmotion Polo Argentina",
+    "Inmotion Argentina",
     "Thom Krupa"
   ],
   "homepage": "https://github.com/netlify-templates/nextjs-blog-theme",
