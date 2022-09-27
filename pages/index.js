@@ -4,7 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
-import ArrowIcon from '../components/ArrowIcon';
+import Form from '../components/Form';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 import Countdown  from './countdown';
@@ -43,7 +43,7 @@ export default function Index({ posts, globalData }) {
           </div>
 
         </div>
-
+        <Form />
         {/* <ul className="w-full">
           {posts.map((post) => (
             <li
