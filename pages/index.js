@@ -4,46 +4,20 @@ import { Parallax } from 'react-scroll-parallax';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
-import Form from '../components/Form';
+import GoogleForm from '../components/GoogleForm';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
-import Countdown  from './countdown';
+import Main from "../components/Main"
 
 export default function Index({ posts, globalData }) {
   return (
-    <Layout>
-      <SEO title={globalData.name} description={globalData.blogTitle} />
+    <Layout>   
       <Header  />
-      <main className="w-full">
-        {/* <h1 className="mb-12 text-3xl text-center lg:text-5xl">
-          {globalData.blogTitle}
-        </h1> */}
-        <div className="flex flex-col items-center justify-around w-full h-auto mb-4">
-          <Countdown/>
-          <Parallax speed={4} >
-            <button class="btn btn-primary m-6">Anotate acá</button>
-          </Parallax>
-        </div>
-        <div className='flex w-full px-4'>
-          <div className="shadow stats">
-            <div className="stat">
-              <div className="stat-title text-secondary">Metros de predio</div>
-              <div className="stat-value ">89.400</div>
-             
-            </div>
-          </div>
-          <div className="ml-4 shadow stats">
-            <div className="stat"> 
-            <div className="stat-figure text-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            </div>
-              <div className="stat-title ">Riders</div>
-              <div className="stat-value text-secondary">18</div>
-            </div>
-          </div>
-
-        </div>
-        <Form />
+      <main className="flex flex-col w-full h-screen px-4">
+        <SEO title={globalData.name} description={globalData.blogTitle} />
+        <Main globalData={globalData} />
+      </main>
+      <GoogleForm />
         {/* <ul className="w-full">
           {posts.map((post) => (
             <li
@@ -72,7 +46,6 @@ export default function Index({ posts, globalData }) {
             </li>
           ))}
         </ul> */}
-      </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
         variant="large"

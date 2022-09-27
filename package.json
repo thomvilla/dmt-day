@@ -28,6 +28,7 @@
     "cypress": "^10.1.0",
     "daisyui": "^2.31.0",
     "emailjs-com": "^3.2.0",
+    "formik": "^2.2.9",
     "gray-matter": "^4.0.2",
     "next": "latest",
     "next-mdx-remote": "^4.1.0",
@@ -36,7 +37,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scroll-parallax": "^3.3.1",
-    "remark-gfm": "^3.0.1"
+    "remark-gfm": "^3.0.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.3.1",
