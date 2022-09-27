@@ -6,8 +6,6 @@
   package = "@netlify/plugin-nextjs"
 
 [[plugins]]
-  package = "netlify-plugin-cypress"
-
   [plugins.inputs.postBuild]
     enable = true
 

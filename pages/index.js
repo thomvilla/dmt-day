@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
-import { Parallax } from 'react-scroll-parallax';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';

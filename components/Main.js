@@ -1,5 +1,5 @@
 import { Parallax } from 'react-scroll-parallax';
-import Countdown from "./Countdown"
+import Countdown from "./countdown"
 
 export default function Main({ globalData }) {
   
