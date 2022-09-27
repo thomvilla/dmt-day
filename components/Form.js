@@ -34,32 +34,56 @@ function App() {
         <form onSubmit={onSubmit}>
             <input
                 type='text'
-                name='from_name'
+                name='name'
                 placeholder='Nombre'
-                value={toSend.from_name}
+                value={toSend.name}
                 onChange={handleChange}
             />
             <input
                 className="m-4"
                 type='text'
-                name='to_name'
+                name='surname'
                 placeholder='Apellido'
-                value={toSend.to_name}
+                value={toSend.surname}
                 onChange={handleChange}
             />
             <input
+                className="m-4"
+                type='text'
+                name='email'
+                placeholder='Email'
+                value={toSend.email}
+                onChange={handleChange}
+            />  
+            <input
+                type='text'
+                name='vehicle'
+                placeholder='Vehiculo'
+                value={toSend.vehicle}
+                onChange={handleChange}
+            />
+            <input
+                className="m-4"
+                type='text'
+                name='experience'
+                placeholder='Experiencia'
+                value={toSend.experience}
+                onChange={handleChange}
+            />  
+            <input
+                className="m-4"
+                type='text'
+                name='millage'
+                placeholder='Kilometraje'
+                value={toSend.millage}
+                onChange={handleChange}
+            />
+            <input
+                className="m-4"
                 type='text'
                 name='message'
-                placeholder='Vehiculo y kilometraje'
+                placeholder='Mensaje'
                 value={toSend.message}
-                onChange={handleChange}
-            />
-            <input
-                className="m-4"
-                type='text'
-                name='reply_to'
-                placeholder='Email'
-                value={toSend.reply_to}
                 onChange={handleChange}
             />
             <button className='m-4 bg-primary' type='submit'>Submit</button>

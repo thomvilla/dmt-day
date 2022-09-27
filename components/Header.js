@@ -19,7 +19,7 @@ export default function Header({ name }) {
         <div className="m-4 text-3xl font-bold animate-pulse md:text-7xl" > DEMENTE DAY 20 NOV </div>
       </CustomLink>
       <p className="text-2xl text-center cursor-pointer dark:text-white">
-        <div className="border collapse collapse-plus border-base-300 bg-base-100 rounded-box ">
+        <div className="collapse collapse-plus bg-base-100 rounded-box ">
           <input type="checkbox" /> 
           <div className="transition-all collapse-title bg-secondary text-primary-content hover:bg-gradient-2 "> Me interesa</div>
           <div className="collapse-content bg-primary text-primary-content "> 
