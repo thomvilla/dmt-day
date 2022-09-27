@@ -12,6 +12,8 @@ h6 {
   font-family: var(--font-primary);
 }
 
-body {
-  font-family: var(--font-secondary);
+html,
+body,
+label {
+  font-family: 'Roboto', sans-serif;
 }

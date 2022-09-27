@@ -1,35 +1,62 @@
 import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
-
+import { Parallax } from 'react-scroll-parallax';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import Countdown  from './countdown';
 
 export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
-      <Header name={globalData.name} />
+      <Header  />
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+        {/* <h1 className="mb-12 text-3xl text-center lg:text-5xl">
           {globalData.blogTitle}
-        </h1>
-        <ul className="w-full">
+        </h1> */}
+        <div className="flex flex-col items-center justify-around w-full h-auto mb-4">
+          <Countdown/>
+          <Parallax speed={4} >
+            <button class="btn btn-primary m-6">Anotate acá</button>
+          </Parallax>
+        </div>
+        <div className='flex w-full px-4'>
+          <div className="shadow stats">
+            <div className="stat">
+              <div className="stat-title text-secondary">Metros de predio</div>
+              <div className="stat-value ">89.400</div>
+             
+            </div>
+          </div>
+          <div className="ml-4 shadow stats">
+            <div className="stat"> 
+            <div className="stat-figure text-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+              <div className="stat-title ">Riders</div>
+              <div className="stat-value text-secondary">18</div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* <ul className="w-full">
           {posts.map((post) => (
             <li
               key={post.filePath}
-              className="md:first:rounded-t-lg md:last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0"
+              className="transition bg-white border border-b-0 border-gray-800 md:first:rounded-t-lg md:last:rounded-b-lg backdrop-blur-lg dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 dark:border-white border-opacity-10 dark:border-opacity-10 last:border-b hover:border-b hovered-sibling:border-t-0"
             >
               <Link
                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
                 href={`/posts/[slug]`}
               >
-                <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4">
+                <a className="block px-6 py-6 lg:py-10 lg:px-16 focus:outline-none focus:ring-4">
                   {post.data.date && (
-                    <p className="uppercase mb-3 font-bold opacity-60">
+                    <p className="mb-3 font-bold uppercase opacity-60">
                       {post.data.date}
                     </p>
                   )}
@@ -44,7 +71,7 @@ export default function Index({ posts, globalData }) {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
