@@ -3,7 +3,7 @@ describe('sample render test', () => {
     cy.visit('/');
   });
 
-  it('displays the title text', () => {
-    cy.get('h1');
+  it('displays the main', () => {
+    cy.get('main');
   });
 });
